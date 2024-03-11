@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="header border border-1 py-2">
+    <header className="header border border-1 py-2 sticky-top">
       <div className="container">
         <div className="d-flex align-items-center justify-content-between">
           <div className="header-title">
@@ -52,18 +52,16 @@ const Header = () => {
 
           <div className="header-right d-flex align-items-center justify-content-evenly w-25">
             <div className="header-serach">
-              <form>
-                <form className="d-flex" role="search">
-                  <input
-                    className="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button className="btn search-btn bg-white" type="submit">
-                    <FaSearch />
-                  </button>
-                </form>
+              <form className="d-flex" role="search">
+                <input
+                  className="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button className="btn search-btn bg-white" type="submit">
+                  <FaSearch />
+                </button>
               </form>
             </div>
             <div className="header-btns d-flex align-items-center justify-content-evenly w-50">

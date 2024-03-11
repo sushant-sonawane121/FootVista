@@ -1,0 +1,14 @@
+.mycard {
+  border: 1px solid black;
+  width: 15rem;
+  height: 20rem;
+  max-height: fit-content;
+  box-shadow: 0px 0px 10px 1px black;
+}
+.mycard-body {
+  border: 1px solid green;
+  height: 100%;
+}
+.card-img img {
+  width: 100%;
+}
