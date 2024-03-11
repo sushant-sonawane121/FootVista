@@ -1,0 +1,11 @@
+.header{
+    background-color: teal;
+
+}
+.search-btn{
+    border: 1px solid black;
+    
+}
+.cart{
+    cursor: pointer;
+}
