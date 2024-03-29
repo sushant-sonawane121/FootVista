@@ -5,73 +5,81 @@ import { FaSearch } from "react-icons/fa";
 
 const Header = () => {
   return (
-    <header className="header border border-1 py-2 sticky-top">
+    <header className="header bg-dark">
       <div className="container">
-        <div className="d-flex align-items-center justify-content-between">
-          <div className="header-title">
-            <h2 className="text-light">FootVista</h2>
-          </div>
-          <nav>
-            <ul className="d-flex gap-5 list-unstyled mb-0">
-              <li>
-                <Link to={"/"} className="text-decoration-none text-dark">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"listings"}
-                  className="text-decoration-none text-dark"
-                >
-                  Men
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"listings"}
-                  className="text-decoration-none text-dark"
-                >
-                  Women
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to={"listings"}
-                  className="text-decoration-none text-dark"
-                >
-                  Kids
-                </Link>
-              </li>
-              <li>
-                <Link to={"new"} className="text-decoration-none text-dark">
-                  New Arivals
-                </Link>
-              </li>
-            </ul>
-          </nav>
-
-          <div className="header-right d-flex align-items-center justify-content-evenly w-25">
-            <div className="header-serach">
-              <form className="d-flex" role="search">
+        <nav className="navbar navbar-expand-lg navbar-dark">
+          <div className="container-fluid">
+            <Link to={"/"} className="navbar-brand">
+              FootVista
+            </Link>
+            
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <Link to={"/"} className="nav-link">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"products"} className="nav-link">
+                    Men
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"products"} className="nav-link">
+                    Women
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"products"} className="nav-link">
+                    Kids
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"new"} className="nav-link">
+                    New Arrivals
+                  </Link>
+                </li>
+              </ul>
+              <ul className="navbar-nav d-lg-flex d-sm-flex flex-row gap-3 xalign-items-center">
+                <li className="nav-item">
+                  <Link to={"login"} className="nav-link">
+                    Login
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link to={"cart"} className="nav-link">
+                    <FaShoppingCart />
+                  </Link>
+                </li>
+                
+              </ul>
+              <form className="d-flex me-auto d-lg-none">
                 <input
                   className="form-control me-2"
                   type="search"
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <button className="btn search-btn bg-white" type="submit">
+                <button className="btn btn-outline-light" type="submit">
                   <FaSearch />
                 </button>
               </form>
-            </div>
-            <div className="header-btns d-flex align-items-center justify-content-evenly w-50">
-              <Link to={"login"} className="btn">
-                Login
-              </Link>
-              <FaShoppingCart className="fs-4 cart" />
+              
             </div>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
   );
