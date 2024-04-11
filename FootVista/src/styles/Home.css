@@ -1,34 +1,107 @@
 .new-arrivals-scroll {
-    overflow-x: auto;
-    white-space: nowrap;
-    /* Hide default scrollbar */
-    /* scrollbar-width: none;  */
-    /* Firefox */
-    /* -ms-overflow-style: none; */
-     /* Internet Explorer 10+ */
-  }
-  
-  .card-container {
-    display: flex;
-   
-    /* gap: 1px; Adjust the value as needed */
-  }
-  
-  .card {
-    width: 300px; /* Set the width of the card */
-  }
-  
+  overflow-x: auto;
+  white-space: nowrap;
+  /* Hide default scrollbar */
+  /* scrollbar-width: none;  */
+  /* Firefox */
+  /* -ms-overflow-style: none; */
+  /* Internet Explorer 10+ */
+}
 
-  /* Customize scrollbar for WebKit browsers */
+.card-container {
+  display: flex;
+
+  /* gap: 1px; Adjust the value as needed */
+}
+
+.card {
+  width: 300px; /* Set the width of the card */
+}
+
+/* Customize scrollbar for WebKit browsers */
 .new-arrivals-scroll::-webkit-scrollbar {
   height: 2px; /* Adjust the height of the scrollbar */
 }
 
 .new-arrivals-scroll::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color of the scrollbar thumb */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the color of the scrollbar thumb */
   border-radius: 4px; /* Adjust the border radius of the scrollbar thumb */
 }
 
 .new-arrivals-scroll::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1); /* Adjust the color of the scrollbar track */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.1
+  ); /* Adjust the color of the scrollbar track */
+}
+
+/* css for home page serach bar */
+.home-search {
+  margin-top: 5rem;
+  /* border: 1px solid red; */
+}
+.home-search-bar {
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  border: 1px solid black;
+  border-right: none;
+  width: 50%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: medium;
+}
+.serach-btn-wraper {
+  width: 10%;
+}
+.search-btn {
+  height: 2.5rem;
+  border: 1px solid black;
+  border-left: none;
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: darkorange;
+  color: black;
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+}
+
+/* css for new arival cards */
+
+.section-container {
+  max-width: 100%;
+  background: #595959;
+  margin: auto;
+  
+  padding: 20px;
+
+  display: flex;
+  align-items: center; /* Align the scroll icon vertically */
+}
+
+.product-list-container {
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: thin;
+  scrollbar-color: #333 #ccc;
+  cursor: pointer;
+  /* border: 1px solid green; */
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid yellow; */
 }
