@@ -49,6 +49,7 @@ const Home = () => {
                 <Card />
                 <Card />
                 <Card />
+                
               </div>
             </div>
           </section>
