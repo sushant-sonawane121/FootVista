@@ -88,4 +88,6 @@ const deleteProduct = async (req, res) => {
   }
 };
 
+
+
 module.exports = { addProduct, getAllProducts, deleteProduct };
